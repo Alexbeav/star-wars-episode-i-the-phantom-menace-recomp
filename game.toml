@@ -1,0 +1,44 @@
+
+[game]
+name = "Star Wars Episode I: The Phantom Menace"
+id = "SLES-02034"
+players = 1
+exe = "disc/SLES_020.34"
+disc = "disc/Star Wars - Episode I - The Phantom Menace (Europe).cue"
+load_address = "0x80010000"
+entry_pc = "0x8005E240"
+text_size = "0x00076800"
+stack_base = "0x801FFFF0"
+
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Star Wars - Episode I - The Phantom Menace (Europe).bin"
+cue_name = "Star Wars - Episode I - The Phantom Menace (Europe).cue"
+boot_exe = "SLES_020.34"
+known_sizes = [675430896]
+known_md5 = ["42bee5c54967b84799674fdcb5b72294"]
+known_sha1 = ["e811ef4d2d65fcaae4625c7721be1ae2ec813bf9"]
+known_crc32 = ["7b7bbb11"]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH5552.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "Star Wars Episode I: The Phantom Menace Recompiled"
+memcard_dir = "saves"
+openbios = false
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "35a9dc744e38d146190ab9afa0f0250f01b2781b74dc1114a1a3678ccac26c12"

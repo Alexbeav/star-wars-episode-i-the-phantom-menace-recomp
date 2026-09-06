@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Star Wars Episode I: The Phantom Menace",
+    "id": "SLES-02034",
+    "boot_exe": "SLES_020.34"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "Europe",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Star Wars - Episode I - The Phantom Menace (Europe).cue",
+    "bin_name": "Star Wars - Episode I - The Phantom Menace (Europe).bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": false,
+    "data_track": {
+      "size": 675430896,
+      "md5": "42bee5c54967b84799674fdcb5b72294",
+      "sha1": "e811ef4d2d65fcaae4625c7721be1ae2ec813bf9",
+      "crc32": "7b7bbb11"
+    },
+    "disc_fp": "35a9dc744e38d146190ab9afa0f0250f01b2781b74dc1114a1a3678ccac26c12"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x8005E240",
+    "text_size": "0x00076800",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 1101,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "psx.redump-disc-set.v1",
+  "discs": [
+    {
+      "index": 1,
+      "cue_name": "Star Wars - Episode I - The Phantom Menace (Europe).cue",
+      "bin_name": "Star Wars - Episode I - The Phantom Menace (Europe).bin",
+      "size": 675430896,
+      "md5": "42bee5c54967b84799674fdcb5b72294",
+      "sha1": "e811ef4d2d65fcaae4625c7721be1ae2ec813bf9",
+      "crc32": "7b7bbb11",
+      "track_count": 1,
+      "tracks": [
+        {
+          "name": "Star Wars - Episode I - The Phantom Menace (Europe).bin",
+          "size": "675430896",
+          "crc": "7b7bbb11",
+          "md5": "42bee5c54967b84799674fdcb5b72294",
+          "sha1": "e811ef4d2d65fcaae4625c7721be1ae2ec813bf9"
+        }
+      ]
+    }
+  ]
+}
